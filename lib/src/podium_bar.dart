@@ -11,6 +11,7 @@ class PodiumBar extends StatelessWidget {
     required this.backgroundColor,
     required this.rankingTextStyle,
     required this.height,
+    required this.is2D,
   });
 
   final Widget title;
@@ -21,29 +22,34 @@ class PodiumBar extends StatelessWidget {
   final Color backgroundColor;
   final TextStyle rankingTextStyle;
   final double height;
+  final bool is2D;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        title,
+        SizedBox(
+          width: width,
+          child: title,
+        ),
         const SizedBox(
           height: 10,
         ),
-        RotatedBox(
-          quarterTurns: 2,
-          child: Transform(
-            transform: Matrix4.identity()
-              ..setEntry(3, 2, 0.02)
-              ..rotateX(3.14 / 10),
-            alignment: FractionalOffset.center,
-            child: Container(
-              height: 10,
-              width: width - 3,
-              color: backgroundColor.withOpacity(0.9),
+        if (!is2D)
+          RotatedBox(
+            quarterTurns: 2,
+            child: Transform(
+              transform: Matrix4.identity()
+                ..setEntry(3, 2, 0.02)
+                ..rotateX(3.14 / 10),
+              alignment: FractionalOffset.center,
+              child: Container(
+                height: 10,
+                width: width - 3,
+                color: backgroundColor.withOpacity(0.9),
+              ),
             ),
           ),
-        ),
         Container(
           width: width,
           height: height,

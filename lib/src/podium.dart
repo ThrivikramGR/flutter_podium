@@ -13,8 +13,9 @@ class Podium extends StatelessWidget {
     this.color = Colors.blue,
     this.rankingTextColor = Colors.white,
     this.rankingFontSize = 50,
+    this.is2D = false,
     this.hideRanking = false,
-    this.displayRankingNumberInsteadOfText = false,
+    this.showRankingNumberInsteadOfText = false,
     this.firstRankingText = " FIRST     ",
     this.secondRankingText = " SEC   ",
     this.thirdRankingText = " TH",
@@ -24,7 +25,7 @@ class Podium extends StatelessWidget {
   final Widget secondPosition;
   final Widget thirdPosition;
   final bool hideRanking;
-  final bool displayRankingNumberInsteadOfText;
+  final bool showRankingNumberInsteadOfText;
   final double horizontalSpacing;
   final Color color;
   final double height;
@@ -34,6 +35,7 @@ class Podium extends StatelessWidget {
   final String thirdRankingText;
   final double rankingFontSize;
   final Color rankingTextColor;
+  final bool is2D;
 
   @override
   Widget build(BuildContext context) {
@@ -44,10 +46,9 @@ class Podium extends StatelessWidget {
         PodiumBar(
           title: secondPosition,
           width: width,
-          displayRankingNumberInsteadOfText: displayRankingNumberInsteadOfText,
+          displayRankingNumberInsteadOfText: showRankingNumberInsteadOfText,
           hideRanking: hideRanking,
-          rankingText:
-              displayRankingNumberInsteadOfText ? "2" : secondRankingText,
+          rankingText: showRankingNumberInsteadOfText ? "2" : secondRankingText,
           backgroundColor: color,
           rankingTextStyle: TextStyle(
             fontSize: rankingFontSize,
@@ -55,6 +56,7 @@ class Podium extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
           height: height / 1.5,
+          is2D: is2D,
         ),
         SizedBox(
           width: horizontalSpacing,
@@ -62,10 +64,9 @@ class Podium extends StatelessWidget {
         PodiumBar(
           title: firstPosition,
           width: width,
-          displayRankingNumberInsteadOfText: displayRankingNumberInsteadOfText,
+          displayRankingNumberInsteadOfText: showRankingNumberInsteadOfText,
           hideRanking: hideRanking,
-          rankingText:
-              displayRankingNumberInsteadOfText ? "1" : firstRankingText,
+          rankingText: showRankingNumberInsteadOfText ? "1" : firstRankingText,
           backgroundColor: color,
           rankingTextStyle: TextStyle(
             fontSize: rankingFontSize,
@@ -73,6 +74,7 @@ class Podium extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
           height: height,
+          is2D: is2D,
         ),
         SizedBox(
           width: horizontalSpacing,
@@ -80,10 +82,9 @@ class Podium extends StatelessWidget {
         PodiumBar(
           title: thirdPosition,
           width: width,
-          displayRankingNumberInsteadOfText: displayRankingNumberInsteadOfText,
+          displayRankingNumberInsteadOfText: showRankingNumberInsteadOfText,
           hideRanking: hideRanking,
-          rankingText:
-              displayRankingNumberInsteadOfText ? "3" : thirdRankingText,
+          rankingText: showRankingNumberInsteadOfText ? "3" : thirdRankingText,
           backgroundColor: color,
           rankingTextStyle: TextStyle(
             fontSize: rankingFontSize,
@@ -91,6 +92,7 @@ class Podium extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
           height: height / 2.5,
+          is2D: is2D,
         ),
       ],
     );

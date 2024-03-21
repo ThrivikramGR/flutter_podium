@@ -5,3 +5,7 @@
 ## 1.0.1
 
 * Added supported platforms
+
+## 1.0.2
+
+* Bug fixed in the provided example

@@ -27,10 +27,12 @@ class PodiumBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.end,
+      mainAxisSize: MainAxisSize.min,
       children: [
         SizedBox(
           width: width,
-          child: title,
+          child: Center(child: title),
         ),
         const SizedBox(
           height: 10,

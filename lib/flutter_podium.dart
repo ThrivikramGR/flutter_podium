@@ -1,3 +1,3 @@
 library podium;
 
-export 'src/podium.dart';
+export 'src/flutter_podium.dart';

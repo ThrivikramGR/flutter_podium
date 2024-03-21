@@ -16,7 +16,7 @@ To use the Flutter Podium Widget in your project, follow these steps:<br><br>
 Add the following line with the latest version to your pubspec.yaml file:<br>
 ```dart
 dependencies:
-  podium:^1.0.0
+  flutter_podium:^1.0.0
 ```
 <b>2. Install the package:</b><br>
 Run the following command in your terminal to install the package:<br>

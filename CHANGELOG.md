@@ -13,3 +13,7 @@
 ## 1.0.3
 
 * API Documentation added
+
+## 1.0.4
+
+* Version generalized in README.md

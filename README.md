@@ -1,6 +1,6 @@
 ## Showcase your top performers in style with a modern 3D Podium widget!
 
-This package provides a customizable Podium widget for Flutter that allows you to easily display three positions with sleek 3D bars.
+This package provides a customizable Podium widget for Flutter that allows you to easily display three positions with sleek 3D bars. <br><br>
 <img width="320" alt="sample screenshot 1" src="https://github.com/ThrivikramGR/flutter_podium/assets/72206073/876c189b-dd01-43df-8fdd-9241deb63179">
 <img width="320" alt="sample screenshot 2" src="https://github.com/ThrivikramGR/flutter_podium/assets/72206073/8284ace4-1989-4a1e-be28-dceb04fdb064">
 <img width="320" alt="sample screenshot 3" src="https://github.com/ThrivikramGR/flutter_podium/assets/72206073/3912fcc0-db82-4bb0-8c1c-3fc80e30b7ef">

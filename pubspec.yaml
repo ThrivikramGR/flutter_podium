@@ -1,6 +1,6 @@
 name: flutter_podium
 description: "A beautiful 3D Podium Widget to display Rankings"
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/ThrivikramGR/flutter_podium
 
 environment:
@@ -10,6 +10,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
 
 dev_dependencies:
   flutter_test:

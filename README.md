@@ -26,14 +26,14 @@ flutter pub get
 <b>3. Import the package:</b><br>
 Add the following line to the top of the dart file where you would want to use the podium widget:<br>
 ```dart
-import 'package:podium/podium.dart'
+import 'package:podium/flutter_podium.dart'
 ```
 
 ## Usage
 
 Here's a basic example of how to use the Podium widget:
 ```dart
-import 'package:podium/podium.dart';
+import 'package:podium/flutter_podium.dart';
 
 void main() {
   runApp(MyApp());

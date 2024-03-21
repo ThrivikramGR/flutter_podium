@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:podium/src/podium_bar.dart';
+import 'package:flutter_podium/src/podium_bar.dart';
 
 class Podium extends StatelessWidget {
   const Podium({

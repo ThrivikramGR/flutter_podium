@@ -35,43 +35,35 @@ Here's a basic example of how to use the Podium widget:
 ```dart
 import 'package:podium/flutter_podium.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter Podium Widget'),
-        ),
-        body: Center(
-          child: Podium(
-            // Replace with your data
-            firstPlace: ' Winner Name',
-            secondPlace: ' Runner-Up Name',
-            thirdPlace: ' Third Place Name',
+      Podium(
+            firstPosition: Text("Winner 1"),
+            secondPosition: Text("Winner 2"),
+            thirdPosition: Text("Winner 3"),
           ),
-        ),
-      ),
-    );
-  }
-}
 ```
 This code snippet will display a podium with " Winner Name", " Runner-Up Name", and " Third Place Name" occupying the first, second, and third positions, respectively.
 
 <b>Additional Customization:</b>
 
-The Podium widget offers various properties to customize its appearance. Explore the available properties in the API documentation: TODO: Add link to your API documentation for a complete list and detailed descriptions.
+The Podium widget offers various properties to customize its appearance. Explore a few of the available properties in the code snippet below:
 
 ```dart
-todo add customized podium code here
+  Podium(
+            firstPosition: Text("James"),
+            secondPosition: Text("Steinfield"),
+            thirdPosition: Text("Icona"),
+            color: Colors.pink,
+            rankingTextColor: Colors.white,
+            rankingFontSize: 30,
+            displayRankingNumberInsteadOfText: true,
+            hideRanking: false,
+            height: 250,
+            width: 250,
+            horizontalSpacing: 3,
+          ),
 ```
 
 ## Additional information
 
-<b>Documentation:</b> Refer to the comprehensive API documentation for detailed information on using the package effectively. (Link to your API documentation here)<br><br>
-<b>Contributing:</b> We welcome contributions from the community! If you have improvements or new features in mind, feel free to submit a pull request. (Link to your contribution guidelines here)<br><br>
-<b>Issues:</b> Encountered a bug or have a question? Raise an issue on the GitHub repository. (Link to your GitHub repository here)<br><br><br>
+<b>Contributing:</b> We welcome contributions from the community! If you have improvements or new features in mind, feel free to submit a pull request.<br><br>
+<b>Issues:</b> Encountered a bug or have a question? Raise an issue on the GitHub repository.<br><br><br>

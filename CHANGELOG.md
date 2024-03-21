@@ -9,3 +9,7 @@
 ## 1.0.2
 
 * Bug fixed in the provided example
+
+## 1.0.3
+
+* API Documentation added

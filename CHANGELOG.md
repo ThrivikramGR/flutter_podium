@@ -1,3 +1,3 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+* The first release of the podium package provides you with a highly customizable and modern looking podium widget!

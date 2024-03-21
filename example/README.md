@@ -62,7 +62,7 @@ The Podium widget offers various properties to customize its appearance. Explore
             displayRankingNumberInsteadOfText: true,
             hideRanking: false,
             height: 250,
-            width: 250,
+            width: 100,
             horizontalSpacing: 3,
           ),
 ```

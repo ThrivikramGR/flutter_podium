@@ -17,3 +17,7 @@
 ## 1.0.4
 
 * Version generalized in README.md
+
+## 1.0.5
+
+* replaced "withOpacity()", as it is deprecated, with "withValues()" to avoid precision loss

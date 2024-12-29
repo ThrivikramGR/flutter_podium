@@ -48,7 +48,7 @@ class PodiumBar extends StatelessWidget {
               child: Container(
                 height: 10,
                 width: width - 3,
-                color: backgroundColor.withOpacity(0.9),
+                color: backgroundColor.withValues(alpha: 0.9),
               ),
             ),
           ),
